@@ -6,7 +6,7 @@ assert = require('assert')
 
 describe('basic', function() {
     it('module loads', function() {
-		index = require('../obj2schema.js')
+		index = require('../schema-ramp.js')
 		assert(index !== undefined)
     })
 })

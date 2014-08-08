@@ -1,6 +1,6 @@
-var obj2schema = require('../obj2schema')
+var schema-ramp = require('../schema-ramp')
 var obj        = require('./data.json')
-var schema     = obj2schema(obj)
+var schema     = schema-ramp(obj)
 
 var pd         = require('pretty-data').pd
 console.log(pd.json(schema))

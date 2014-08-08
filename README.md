@@ -1,23 +1,23 @@
-# obj2schema
+# schema-ramp
 
-Convert JS Object to JSON Schema
+Ramp up a JS object into a JSON Schema by converting a JS Object to JSON Schema
 
 ## Install
 
 #### Browser
 
 ```html
-<script src="https://raw.githubusercontent.com/yieme/obj2schema/master/obj2schema.js" type="text/javascript"></script>
+<script src="https://raw.githubusercontent.com/yieme/schema-ramp/master/schema-ramp.js" type="text/javascript"></script>
 ```
 
 #### Node.js
 
 ```sh
-npm install obj2schema
+npm install schema-ramp
 ```
 
 ```js
-var obj2schema = require('obj2schema')
+var schema-ramp = require('schema-ramp')
 ```
 
 
@@ -47,9 +47,9 @@ var obj2schema = require('obj2schema')
 Most basic example
 
 ```js
-var obj2schema = require('../obj2schema')
+var schema-ramp = require('../schema-ramp')
 var obj        = require('./data.json')
-var schema     = obj2schema(obj) /*
+var schema     = schema-ramp(obj) /*
 {
   "type": "object",
   "properties": {
@@ -91,13 +91,13 @@ var schema     = obj2schema(obj) /*
 Add id's for site.com
 
 ```js
-var obj2schema = require('../obj2schema')
+var schema-ramp = require('../schema-ramp')
 var obj        = require('./data.json')
 var options    = {
   url: 'http://site.com',
   ids: true
 }
-var schema     = obj2schema(obj, options) /*
+var schema     = schema-ramp(obj, options) /*
 {
   "id": "#",
   "type": "object",
@@ -148,14 +148,14 @@ var schema     = obj2schema(obj, options) /*
 Add absolute id's for site.com
 
 ```js
-var obj2schema = require('../obj2schema')
+var schema-ramp = require('../schema-ramp')
 var obj        = require('./data.json')
 var options    = {
   url: 'http://site.com',
   ids: true,
   absoluteIds: true
 }
-var schema     = obj2schema(obj, options) /*
+var schema     = schema-ramp(obj, options) /*
 {
   "id": "http://site.com#",
   "type": "object",
@@ -207,7 +207,7 @@ var schema     = obj2schema(obj, options) /*
 Add defaults for site.com
 
 ```js
-var obj2schema = require('../obj2schema')
+var schema-ramp = require('../schema-ramp')
 var obj        = require('./data.json')
 var options    = {
   url: 'http://site.com',
@@ -215,7 +215,7 @@ var options    = {
   absoluteIds: true,
   default: true
 }
-var schema     = obj2schema(obj, options) /*
+var schema     = schema-ramp(obj, options) /*
 {
   "id": "http://site.com#",
   "type": "object",
@@ -271,7 +271,7 @@ var schema     = obj2schema(obj, options) /*
 Add required fields
 
 ```js
-var obj2schema = require('../obj2schema')
+var schema-ramp = require('../schema-ramp')
 var obj        = require('./data.json')
 var options    = {
   url: 'http://site.com',
@@ -280,7 +280,7 @@ var options    = {
   default: true,
   required: true
 }
-var schema     = obj2schema(obj, options) /*
+var schema     = schema-ramp(obj, options) /*
 {
   "id": "http://site.com#",
   "type": "object",
@@ -349,7 +349,7 @@ var schema     = obj2schema(obj, options) /*
 Add verbose fields
 
 ```js
-var obj2schema = require('../obj2schema')
+var schema-ramp = require('../schema-ramp')
 var obj        = require('./data.json')
 var options    = {
   url: 'http://site.com',
@@ -359,7 +359,7 @@ var options    = {
   required: true,
   verbose: true
 }
-var schema     = obj2schema(obj, options) /*
+var schema     = schema-ramp(obj, options) /*
 {
   "id": "http://site.com#",
   "type": "object",
@@ -469,7 +469,7 @@ var schema     = obj2schema(obj, options) /*
 Add a default max length for strings. Likewise ```maximum``` would work for numbers like ```maxLength``` does for strings
 
 ```js
-var obj2schema = require('../obj2schema')
+var schema-ramp = require('../schema-ramp')
 var obj        = require('./data.json')
 var options    = {
   url: 'http://site.com',
@@ -480,7 +480,7 @@ var options    = {
   verbose: true,
   maxLength: 99
 }
-var schema     = obj2schema(obj, options) /*
+var schema     = schema-ramp(obj, options) /*
 {
   "id": "http://site.com#",
   "type": "object",
@@ -594,7 +594,7 @@ var schema     = obj2schema(obj, options) /*
 Auto calculate values
 
 ```js
-var obj2schema = require('../obj2schema')
+var schema-ramp = require('../schema-ramp')
 var obj        = require('./data.json')
 var options    = {
   url: 'http://site.com',
@@ -607,7 +607,7 @@ var options    = {
   maximum: 'auto',
   verbose: 'auto'
 }
-var schema     = obj2schema(obj, options) /*
+var schema     = schema-ramp(obj, options) /*
 {
   "id": "http://site.com#",
   "type": "object",

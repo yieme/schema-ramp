@@ -1,34 +1,35 @@
 {
-  "name": "obj2schema",
+  "name": "schema-ramp",
   "version": "0.1.11",
-  "description": "JS Object to JSON Schema",
-  "main": "obj2schema.js",
+  "description": "Ramp up a JS object into a JSON Schema",
+  "main": "schema-ramp.js",
   "scripts": {
     "test": "mocha -R list test/*.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yieme/obj2schema.git"
+    "url": "https://github.com/yieme/schema-ramp.git"
   },
   "engines": {
     "node": ">=0.8.0"
   },
   "keywords": [
-    "JOPO",
     "JSON",
     "Schema",
     "json",
     "schema",
     "json-schema",
     "JSON",
-    "Schema"
+    "Schema",
+    "json schema",
+    "JSON Schema"
   ],
   "author": "yieme",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yieme/obj2schema/issues"
+    "url": "https://github.com/yieme/schema-ramp/issues"
   },
-  "homepage": "https://github.com/yieme/obj2schema",
+  "homepage": "https://github.com/yieme/schema-ramp",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-bump": "0.0.15",
