@@ -1,0 +1,13 @@
+{
+  "address": {
+    "streetAddress": "123 Somewhere Ave",
+    "city": "Boise",
+    "zip": 83702
+  },
+  "phoneNumber": [
+    {
+      "location": "home",
+      "number": "800 555-1212"
+    }
+  ]
+}
