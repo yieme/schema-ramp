@@ -1,0 +1,40 @@
+{
+  "name": "Obj2Schema",
+  "version": "0.1.6",
+  "description": "JS Object to JSON Schema",
+  "main": "obj2schema.js",
+  "scripts": {
+    "test": "mocha -R list test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yieme/obj2schema.git"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "keywords": [
+    "JOPO",
+    "JSON",
+    "Schema",
+    "json",
+    "schema",
+    "json-schema",
+    "JSON",
+    "Schema"
+  ],
+  "author": "yieme",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yieme/obj2schema/issues"
+  },
+  "homepage": "https://github.com/yieme/obj2schema",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-bump": "0.0.15",
+    "mocha": "^1.21.4",
+    "pretty-data": "^0.40.0",
+    "should": "^4.0.4"
+  },
+  "dependencies": {}
+}
