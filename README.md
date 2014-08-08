@@ -1,6 +1,10 @@
 # schema-ramp
 
-Ramp up a JS object into a JSON Schema by converting a JS Object to JSON Schema
+Ramp up a JS object into a [JSON Schema](http://json-schema.org)
+
+Like a moving truck ramp helps you move things onto a truck,
+[schema-ramp](http://github.com/yieme/schema-ramp)
+helps you move forward with using [JSON Schema](http://json-schema.org) with your data by helping convert a Plain Old JavaScript Object (POJO) into a [JSON Schema](http://json-schema.org)
 
 ## Install
 
@@ -19,8 +23,6 @@ npm install schema-ramp
 ```js
 var ramp = require('schema-ramp')
 ```
-
-
 
 ## Usage
 
