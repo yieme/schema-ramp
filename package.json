@@ -1,6 +1,6 @@
 {
   "name": "Obj2Schema",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "JS Object to JSON Schema",
   "main": "obj2schema.js",
   "scripts": {
