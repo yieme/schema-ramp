@@ -1,6 +1,6 @@
 {
   "name": "schema-ramp",
-  "version": "0.1.13",
+  "version": "0.1.14",
   "description": "Ramp up a JS object into a JSON Schema",
   "main": "schema-ramp.js",
   "scripts": {
