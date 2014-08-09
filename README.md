@@ -1,5 +1,6 @@
-# schema-ramp <img src="logo/schema-ramp-128.png" align="right">
+# schema-ramp
 
+<img src="logo/schema-ramp-128.png" align="right">
 Ramp up a JS object into a [JSON Schema](http://json-schema.org)
 
 Like a moving truck ramp helps you move things onto a truck,
